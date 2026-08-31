@@ -92,7 +92,79 @@ h2 {
 
 #interests li:hover {
   background: #e6ac00;
-  color: #e6ac00;
+  color: #00004c;
   border-color: #000;
   transform: translateY(-2px);
+}
+
+
+.sidebar-img {
+width:100%;
+max-width: 760px;
+aspect-ratio: 3/4;
+object-fit: cover;
+display: block;
+border-radius: 15px;
+box-shadow: 0 8px 30px rgba (0,0,0,0.12);
+border: 7px solid #e6ac00;
+border-style: outset;
+}
+
+
+.sidebar-img:hover {
+  filter: grayscale(0%);
+  transform: translateY(-4px);
+  box-shadow: 0 16px, 40px rgba (0,0,0,0.18);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  padding: 16px 24px;
+  background: #ccccff;
+  border: 5px solid #e6ac00;
+  border-radius: 50px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #a78623;
+}
+
+#nav-ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-li a {
+  color: #a78623;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.nav-li a:hover {
+  background: #ffd24d;
+  color: #00004c;
+}
+ul li::marker{
+  font-size: 1.5em;
+  color:#a78623;  
+}
+ul {
+  list-style-type:circle;
 }
