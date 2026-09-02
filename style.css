@@ -31,7 +31,8 @@ main {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 12px;
 }
 
@@ -163,8 +164,72 @@ nav h1 {
 }
 ul li::marker{
   font-size: 1.5em;
-  color:#a78623;  
+  color:#e6ac00;  
 }
 ul {
-  list-style-type:circle;
+  list-style-type:disc;
 }
+
+
+/* Portfolio styles */
+.content h1 {
+  color: #e6ac00;
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  color: #e6ac00;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 3px solid #e6ac00;
+  border-style: outset;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+
+}
+
+#portfolio a:hover {
+  background: #ffd24d;
+  color: #00004c;
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  position: absolute;
+  right: 20px;
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
+
+}
+.content h3 {
+  color:#caa638
+}
+
