@@ -235,4 +235,9 @@ ul {
   color:#caa638;
 }
 
+.portfolio-main {
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
