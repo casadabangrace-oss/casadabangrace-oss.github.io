@@ -1,0 +1,163 @@
+/*The Creator's keep*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(to bottom right,#001606,#184730,#109468);
+    color: rgb(212,175,55);
+    min-height: 100vh;
+}
+/*Main Website Container */
+#all-contents {
+    min-height: 100vh;
+}
+
+/*Top navigation*/
+nav {
+    margin: 20px;
+    padding: 18px 30px;
+    background: rgb(201, 219, 182);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #183326;
+    border: 5px;
+    border-style: outset;
+    border-color: rgb(212,175,55) ;
+    
+}
+
+/*website name*/
+nav h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+/*Navigation links*/
+
+#nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-li a {
+    color: #183326;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #527d5f;
+}
+
+/*Welcome section*/
+
+main {
+    text-align: center;
+}
+
+.welcome {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 30px;
+}
+
+.welcome-text {
+    letter-spacing: 5px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.welcome h2 {
+    font-size: 4rem;
+    margin: 20px 0;
+    text-shadow: 0 0 20px rgba (255, 255, 255, 0.4);
+}
+
+.welcome p:not(.welcome-text){
+    max-width: 650px;
+    margin: 0 auto 35px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* Project button*/
+
+.projects-button{
+    display: inline-block;
+    padding: 16px 30px;
+    background: rgb(156,175,136);
+    color: #183326;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 3px;
+    border-style: groove;
+    border-color: rgb(212,175,55);
+    
+}
+
+.projects-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+/*Creator's keep welcome area*/
+
+.welcome {
+    animation: fadeIn 1.2s ease;
+}
+
+.welcome-text {
+    color: rgb(212,175,55);
+}
+
+.welcome h2 {
+    color: rgb(133, 155, 110);
+}
+
+.projects-button {
+    box-shadow: 0 0 15px rgba (255, 255, 255, 0.2);
+}
+
+/* Little entrance animation */
+
+@keyframes fadeIn {
+    from {opacity: 0;
+    transform: translateY(20px);}
+    to {opacity: 1;
+    transform: translateY(0);}
+}
+
+/*Magical glow*/
+
+body::before, 
+body::after {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(70px);
+    opacity: 0.35;
+}
+
+body::before{
+    top: 5%;
+    left: 0%;
+    background: #78c98a;
+}
+
+body::after{
+    bottom: 5%;
+    right: 0%;
+    background: #4fa878;
+}
