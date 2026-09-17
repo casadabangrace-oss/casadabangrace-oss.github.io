@@ -226,3 +226,9 @@ body::after{
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba (255, 255, 255, 0.6);
 }
+
+/*Projects page fade in*/
+
+.projects-page {
+    animation: fadeIn 1.2s ease;
+}

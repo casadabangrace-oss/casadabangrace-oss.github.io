@@ -1,0 +1,58 @@
+/*Enchanted runner*/
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg,#10251d,#193d2d,#0d1c17);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+margin-top: 100px;
+font-size: 4rem;
+color: #f4f1d0;
+text-shadow: 0 0 10px rgba(255,255,255,0.4) 0 0 25px rgba(120,201,138,0.5);
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+}
+
+button {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #183326;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Game world*/
+
+#game {
+    width: 90%;
+    max-width: 900px;
+    height: 400px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border: 3px soild rgba (255,255,255,0.4);
+    border-radius: 25px;
+    background: linear-gradient(#173f31,#245c3f);
+    box-shadow: 0 0 25px rgba (120,201,138,0.4);
+}
+
+/*player*/
+
+#player {
+    position: absolute;
+    left: 80px;
+    bottom: 30px;
+    font-size: 3rem;
+}
+
