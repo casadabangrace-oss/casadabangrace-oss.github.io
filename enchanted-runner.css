@@ -56,3 +56,75 @@ button {
     font-size: 3rem;
 }
 
+/*Top navigation*/
+nav {
+    margin: 20px;
+    padding: 18px 30px;
+    background: rgb(201, 219, 182);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #183326;
+    border: 5px;
+    border-style: outset;
+    border-color: rgb(212,175,55) ;
+    
+}
+
+/*website name*/
+nav h1 {
+    margin: 0;
+    font-size: 1.4rem;
+        color: #183326;
+
+}
+
+/*Navigation links*/
+
+#nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-li a {
+    color: #183326;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #6e441c;
+}
+
+/*Enchanted ground*/
+#game::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background: #145322;
+    border-top: 5px solid #48cf66;
+}
+
+/*Magical lights*/
+
+#game::before{
+    content: "✦ ✧ ✦ ✧ ✦";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    letter-spacing: 50px;
+    color: #c9e6d1;
+    opacity: 0.7;
+}
+
+
+
