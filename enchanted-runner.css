@@ -129,7 +129,10 @@ nav h1 {
 /*Game states */
 
 #game.playing {
-    box-shadow: 0 0 25px rgba(120,201,138,0.4), 0 0 50px rgba(120,201,138,0.2)
+    box-shadow{
+        box-shadow: 0 0 25px rgba(120, 201, 138, 0.6), 0 0 60px rgba(120, 201, 138, 0.3), 0 0 100px rgba(120,201,138,0.3);
+        border-color: #78c98a; 
+    }
 }
 
 .hidden {
