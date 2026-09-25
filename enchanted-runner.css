@@ -139,4 +139,40 @@ nav h1 {
     display: none;
 }
 
+/*Starting magic glow*/
+
+#game.playing {
+    box-shadow: 
+    0 0 25px rgba(120, 201, 138, 0.65),
+    0 0 45px rgba(120, 201, 138, 0.35);
+    animation: magicPulse 1.5s ease;
+}
+
+@keyframes magicPulse {
+    0% {
+        box-shadow: 
+        0 0 10px rgba(120, 201, 138, 0.3);
+    }
+    50% {
+        box-shadow: 
+        0 0 40px rgba(120, 201, 138, 0.9),
+        0 0 80px rgba(120, 201, 138, 0.6);
+    }
+    100% {
+        box-shadow: 
+        0 0 25px rgba(120, 201, 138, 0.65),
+        0 0 45px rgba(120, 201, 138, 0.35);
+    }
+}
+
+/*Obstacle*/
+
+#obstacle {
+    position: absolute;
+    left: 600px;
+    bottom: 55px;
+    font-size: 3rem;
+    color: #f4f1d0;
+}
+
 
